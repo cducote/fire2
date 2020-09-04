@@ -5,7 +5,6 @@ const auth = require('./util/auth');
 
 app.use(cors({ origin: true }));
 
-
 const {
     getAllTodos,
     getOneTodo,

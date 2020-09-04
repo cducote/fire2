@@ -74,7 +74,7 @@ class login extends Component {
 			password: this.state.password
 		};
 		axios
-			.post('http://localhost:5000/onlyfrags-a97bd/us-central1/api/login', userData)
+			.post('https://us-central1-onlyfrags-a97bd.cloudfunctions.net/api/login', userData)
 			.then((response) => {
 				localStorage.setItem('AuthToken', `Bearer ${response.data.token}`);
 				this.setState({ 
